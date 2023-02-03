@@ -1,0 +1,5 @@
+Analizzando il file con il comando "strings -n 12 flag" si notano le stringhe:
+	$Info: This file is packed with the UPX executable packer http://upx.sf.net $
+	$Id: UPX 3.08 Copyright (C) 1996-2011 the UPX Team. All Rights Reserved. $
+Si estrae il file con il comando "upx -d flag"
+Con il comando "strings -n 18 flag | grep UP" è possibile trovare la flag

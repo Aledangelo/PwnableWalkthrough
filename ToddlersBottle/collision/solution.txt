@@ -1,0 +1,5 @@
+L'input deve essere di lungheza pari a 20
+Nella funzione si nota un ciclo for di 5 iterazioni
+La funzione check_password() deve restituire un risultato pari al valore della variabile hascode=0x21DD09EC
+Facendo il ragionamento inverso, vediamo che la funzione prende in input l'argv e lo somma in un ciclo for con 5 iterazioni
+Ragionando ad intervalli di 4 byte, sommiamo mano mano la stringa di 16 'A' nella varibaile res e poi la sottraiamo alla variabile hascode per calolare il valore da mettere in input

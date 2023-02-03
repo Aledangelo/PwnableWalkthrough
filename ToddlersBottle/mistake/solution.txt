@@ -1,0 +1,15 @@
+La challenge ci da un indizio (hint : operator priority)
+Praticamente tutto l'inghippo sta nella funzione open
+la funzione open() apre il file e restituisce un numero intero non negativo che rappresenta il descrittore di file non utilizzato con il numero più basso
+Tuttavia, agli operatori di confronto come < viene assegnata una priorità maggiore rispetto agli operatori di assegnazione =
+Quindi viene chiamata la funzione open e viene verificato che sia minore di zero, non lo è quindi Falso(=0)
+Dato che l'operatore < ha una priorità maggiore, viene fatto prima questo e poi l'assegnazione ad fd, fd quindi è 0
+Nell'altra funzione open, viene passato fd come descrittore del file, 0 rappresenta lo standard input
+quindi non legge la password dal file, ma il nostro input
+dobbiamo mettere una stringa lunga 10
+1111111111
+Poi si deve inserire la password
+C'è la variabile XORKEY=1
+La password che viene inserita viene messa in xor con tutti 1
+Inserendo 0000000000, diventa 1111111111
+PASSWORD INDOVINATA

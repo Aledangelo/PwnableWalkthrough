@@ -1,0 +1,10 @@
+Il file cmd1.c prende in input un comando, poi esegue un filtraggio
+Se nel comando sono presenti 'sh', 'flag' o 'tmp' non lo esegue
+Si può bypassate questo controllo con il carattere di escape \
+In questo modo le operazioni di filtering vengono eseguite sulla stringa "$exploit", che viene sostituita con il comando "/bin/cat flag" direttamente nella funzione system()
+Ho creato una variabile d'ambiente contenente "/bin/cat flag"
+	export exploit="/bin/cat flag"
+Ho messo tutto il path dato che nel codice l'intera variabile PATH viene sovrascritta dalla funzione putenv con una directory che non esiste
+
+In questo caso è stato possibile fare questo grazie alla funzione system(), che non esegue direttamente il comando, ma spawna una shell e ne esegue il comando.
+Questo ha fatto si che interpretasse la variabile d'ambiente e non si limitasse ad eseguire il 'comando' $exploit, cosa che invece sarebbe successo con la funzione exec()

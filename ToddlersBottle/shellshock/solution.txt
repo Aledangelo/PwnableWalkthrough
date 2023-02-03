@@ -1,0 +1,8 @@
+Shellshock
+Il server utilizza una versione di bash vulnerabile alla CVE 'shellshock'
+Vulnerabilità che permette di eseguire comandi arbitrari tramite variabili d'ambiente
+La vulnerabilità è causata dall'elaborazione da parte di Bash delle stringhe finali dopo le definizioni delle funzioni nei valori delle variabili d'ambiente
+
+exploit: env t='() { :; }; cat /home/shellshock/flag' ./shellshock
+
+img: https://news.sophos.com/wp-content/uploads/2014/10/sophos-bash-shellshock-infographic-web-plus-size1.jpg

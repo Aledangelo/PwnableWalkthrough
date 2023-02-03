@@ -1,0 +1,3 @@
+Analizzando il file random.c si vede che per ottenere la flag la XOR tra le variabili key e random deve essere uguale a 0xdeadbeef
+Con gdb è possibile vedere che la funzione rand() genera sempre lo stesso numero, ovvero 0x6b8b4567
+Questo numero viene salvato sullo stack ed immediatamente dopo viene salvato l'input della funzione scanf
