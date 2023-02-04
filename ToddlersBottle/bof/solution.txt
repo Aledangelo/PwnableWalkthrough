@@ -1,6 +1,0 @@
-Analizzando il file bof.c si nota che c'è un buffer di lunghezza 32, senza alcun tipo di controllo sula lunghezza
-La funzione get per un input di lunghezza infinita fino a che non si preme invio
-La chiave deve essere uguale a 0xcafebabe
-Calcolando l'offset tra l'indirizzo di memoria in cui viene messo l'input e quello dove viene salvata la variabile key passata in input alla funzione
-Mando nella funzione get 52 'A' per identificare dove viene salvato l'input e dopo 52, l'input sovrascrive la variabile key in input alla funzione
-Dato che la funzione deve essere eseguita da remoto, si utilizza remote di pwntools

@@ -1,5 +1,0 @@
-Non so perchè, ma il vecchio metodo non ha funzionato qui
-Ho dovuto cercare un altro modo per bypassare il filtro
-Ho trovato su internet la rappresentazione il modo per passare la rappresentazione in ottale dek carattere '/'
-Così sono riuscito a passare il comando: printf(/bin/cat flag) in questo modo
-	./cmd2 '$(printf "%bbin%bcat %s%s" "\57" "\57" "fl" "ag")'

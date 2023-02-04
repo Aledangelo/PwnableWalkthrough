@@ -1,4 +1,0 @@
-Nel file c'è la variabile fd (file descriptor), usata per rappresentare un file da prendere in input
-Viene calolcata sottraendo l'input al numero 0x1234 (4660 in decimale)
-Nella funzione read, mettendo 0 (standard input) al posto di fd, l'input verrà preso dal terminale
-A questo punto si inserisce nel terminale la stringa presente nell'if "LETMEWIN" e viene stampata la flag
