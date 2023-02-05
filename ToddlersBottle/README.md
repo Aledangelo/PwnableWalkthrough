@@ -2,7 +2,7 @@
 
 First set of pwnable CTF
 
-| Name  | Solution | Points |
+| Name  | Hint | Points |
 |-------|----------|--------|
 | Fd | File Descriptor | 1 |
 | Collision | MD5 hash collision| 3|
