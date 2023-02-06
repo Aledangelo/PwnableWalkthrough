@@ -12,6 +12,7 @@ First set of pwnable CTF
 |Input|Bypass input checks|4|
 |Mistake|Operator priority|1|
 |Shellshock|CVE-2014-6271|1|
+|Blackjack| Missing check | 1|
 |Lotto| Error in programming logic|2|
 |Cmd1|Bypass filtering|1|
 |Cmd2|Bypass filtering|9|
