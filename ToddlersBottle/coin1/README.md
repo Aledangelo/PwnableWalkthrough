@@ -37,7 +37,7 @@ This challenge consists in guessing which is the counterfeit coin, with a number
 
 To win this challenge I decided to use a very simple recursive algorithm. Initially I generate numbers from 1 to N, then I split the array in the middle and through the total weight of those numbers I can figure out which of the two lists contains the counterfeit coin. I do this until I get a list with only one number, which is the counterfeit coin.
 
-![alt text](diagram.png)
+<p align="center"><img  src="./diagram.png" /></div>
 
 ## Solution
 
@@ -82,3 +82,100 @@ def send_coin(coin):
     r.sendline(str(coin[0]).encode())
     return r.recvline().decode('utf-8')
 ```
+
+## Connection too slow
+After a first try I noticed that the exploit connection is very slow and 60 seconds is not enough to complete the challenge.
+```
+...
+
+[+] Set parameters ->     N=679 C=10
+[+] Correct! (31)
+
+[+] Set parameters ->     N=636 C=10
+[+] Correct! (32)
+
+[+] Set parameters ->     N=20 C=5
+[+] Correct! (33)
+
+[+] Set parameters ->     N=33 C=6
+[+] Correct! (34)
+
+[+] Set parameters ->     N=752 C=10
+[+] Correct! (35)
+
+[+] Set parameters ->     N=818 C=10
+[+] Correct! (36)
+
+[+] Set parameters ->     N=114 C=7
+[+] Correct! (37)
+
+[+] Set parameters ->     N=568 C=10
+[+] Correct! (38)
+
+[+] Set parameters ->     N=276 C=9
+[+] Correct! (39)
+
+[+] Set parameters ->     N=478 C=9
+[+] Correct! (40)
+
+[+] Set parameters ->     N=595 C=10
+[-] time expired! bye!
+
+```
+
+To solve this problem, I uploaded the exploit in one of the previous challenges, connecting with ssh, in order to start it inside the pwnable network.
+
+```
+...
+
+[+] Set parameters ->     N=37 C=6
+[+] Correct! (85)
+
+[+] Set parameters ->     N=755 C=10
+[+] Correct! (86)
+
+[+] Set parameters ->     N=819 C=10
+[+] Correct! (87)
+
+[+] Set parameters ->     N=634 C=10
+[+] Correct! (88)
+
+[+] Set parameters ->     N=50 C=6
+[+] Correct! (89)
+
+[+] Set parameters ->     N=665 C=10
+[+] Correct! (90)
+
+[+] Set parameters ->     N=21 C=5
+[+] Correct! (91)
+
+[+] Set parameters ->     N=956 C=10
+[+] Correct! (92)
+
+[+] Set parameters ->     N=332 C=9
+[+] Correct! (93)
+
+[+] Set parameters ->     N=610 C=10
+[+] Correct! (94)
+
+[+] Set parameters ->     N=469 C=9
+[+] Correct! (95)
+
+[+] Set parameters ->     N=337 C=9
+[+] Correct! (96)
+
+[+] Set parameters ->     N=22 C=5
+[+] Correct! (97)
+
+[+] Set parameters ->     N=845 C=10
+[+] Correct! (98)
+
+[+] Set parameters ->     N=653 C=10
+[+] Correct! (99)
+
+Congrats! get your flag
+***********************		# I will not reveal the flag to you buddy :)
+
+```
+
+The result is markedly different!
