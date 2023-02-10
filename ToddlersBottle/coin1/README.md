@@ -37,7 +37,8 @@ This challenge consists in guessing which is the counterfeit coin, with a number
 
 To win this challenge I decided to use a very simple recursive algorithm. Initially I generate numbers from 1 to N, then I split the array in the middle and through the total weight of those numbers I can figure out which of the two lists contains the counterfeit coin. I do this until I get a list with only one number, which is the counterfeit coin.
 
-<p align="center"><img  src="./diagram.png" /></div>
+
+<p align="center"><img  src="./activityDiagram.png" /></div>
 
 ## Solution
 
