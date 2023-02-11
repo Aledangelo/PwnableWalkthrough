@@ -1,4 +1,0 @@
-Allora...
-Loutput delle tre funzioni key() sommato deve essere uguale al nostro input
-Controllando il codice assembly si nota che l'output delle tre funzioni va nel registro r0
-Quindi devo inserire in input quello che poi sarà nel registro r0 (probabilmente saranno byte strani)

@@ -10,6 +10,7 @@ First set of pwnable CTF
 |Flag| Packed file |7|
 |Random|Fake random values|1|
 |Input|Bypass input checks|4|
+|Leg|Processor Registers|2|
 |Mistake|Operator priority|1|
 |Shellshock|CVE-2014-6271|1|
 |Coin1|Binary search|6|
