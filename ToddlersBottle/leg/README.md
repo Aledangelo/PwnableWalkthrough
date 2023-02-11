@@ -15,7 +15,7 @@ printf("Daddy has very strong arm! : ");
 
 We are given an .asm file to be able to parse the assembly code of the executable file.
 We can see the assembly code of these three functions.
-* Key1()
+* Key1
 ```
 (gdb) disass key1
 Dump of assembler code for function key1:
