@@ -18,4 +18,5 @@ First set of pwnable CTF
 |Lotto| Error in programming logic|2|
 |Cmd1|Bypass filtering|1|
 |Cmd2|Bypass filtering|9|
+|Asm|Shellcode|6|
 |Blukat|File permissions|3|
