@@ -4,7 +4,7 @@ The server uses a vulnerable bash version. This vulnerability, called shellshock
 
 The vulnerability is caused by Bash processing trailing strings after function definitions in environment variable values.
 
-![alt text](https://news.sophos.com/wp-content/uploads/2014/10/sophos-bash-shellshock-infographic-web-plus-size1.jpg)
+<p align="center"><img  src="https://news.sophos.com/wp-content/uploads/2014/10/sophos-bash-shellshock-infographic-web-plus-size1.jpg" /></div>
 
 ## Usage
 ```
