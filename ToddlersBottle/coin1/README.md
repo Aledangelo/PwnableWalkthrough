@@ -44,7 +44,7 @@ To win this challenge I decided to use a very simple recursive algorithm. Initia
 
 First I created this recursive function, which checks the weight of the left side of the array, then calls itself passing the side of the array with the counterfeit coin.
 
-```
+```python
 def find_counterfeit_coin(coins, attempts):
     number_of_coins = len(coins)
 
@@ -68,7 +68,7 @@ def find_counterfeit_coin(coins, attempts):
 ```
 
 The get_weight() function sends the list of coins and waits for the response from the server, which will be the total weight of those coins.
-```
+```python
 def get_weight(args):
     cmd = ""
     for i in range(0, len(args)):
@@ -78,7 +78,7 @@ def get_weight(args):
     return r.recvline().decode('utf-8')
 ```
 And finally the send_coin() function sends the counterfeit coin.
-```
+```python
 def send_coin(coin):
     r.sendline(str(coin[0]).encode())
     return r.recvline().decode('utf-8')
